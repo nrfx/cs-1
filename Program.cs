@@ -9,20 +9,21 @@ int a = Convert.ToInt32(a_str);
 int b = Convert.ToInt32(b_str);
 int c = Convert.ToInt32(c_str);
 
-Console.WriteLine($"Числа: {a} {b} {c}");
+
+int res = 0;
 
 if (a > b && a > c)
 {
-    int res = b * c;
-    Console.WriteLine($"результат: {res}");
+    res = b * c;
 }
 else if (b > a && b > c)
 {
-    int res = a * c;
-    Console.WriteLine(res);
+    res = a * c;
 }
 else
 {
-    int res = a * b;
-    Console.WriteLine(res);
+    res = a * b;
 }
+
+Console.WriteLine($"Числа: {a} {b} {c}");
+Console.WriteLine($"результат: {res}");
